@@ -1,7 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Roboto',arial, sans-serif;
+  font-family: 'Google Sans',arial, sans-serif;
 }
 
 :root {
@@ -43,24 +43,6 @@ input {
   margin: 0 1em 0 0;
 }
 
-h2 {
-  font-weight: normal;
-  margin: 0 0 3px 0;
-}
-
-h2 a {
-  color: #0003a6;
-}
-
-h2 a:hover {
-  text-decoration: underline;
-}
-
-.link {
-  color: green;
-  font-size: 14px;
-}
-
 a {
   text-decoration: none;
   color: #303030;
@@ -93,6 +75,11 @@ span {
       -ms-flex-align: baseline;
           align-items: baseline;
   vertical-align: bottom;
+  position: relative;
+  white-space: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: 1px solid #d1d1d1;
 }
 
@@ -104,18 +91,9 @@ span {
 
 .searchTools .searchToolOptions li {
   padding: 10px;
-}
-
-.searchTools .searchToolOptions .left {
   float: left;
   margin-right: 10px;
   margin-left: 0px;
-}
-
-.searchTools .searchToolOptions .right {
-  float: right;
-  margin-right: 0px;
-  margin-left: 10px;
 }
 
 .active {
@@ -149,8 +127,23 @@ span {
   max-width: 600px;
 }
 
-.searchResults .result .result-item h2, .searchResults .result .result-item a {
+.searchResults .result .result-item .link {
+  color: #202124;
+  font-size: 14px;
+}
+
+.searchResults .result .result-item h2 {
+  font-weight: normal;
+  margin: 0 0 3px 0;
+}
+
+.searchResults .result .result-item h2 a {
   white-space: nowrap;
+  color: #1a0dab;
+}
+
+.searchResults .result .result-item h2 a:hover {
+  text-decoration: underline;
 }
 
 .searchResults .result .result-item p {
@@ -163,31 +156,35 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .searchResults .result .result-visualisation img {
   margin: 0;
   min-height: 200px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.searchResults .result .result-visualisation img:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .footer {
   position: absolute;
   background: #f2f2f2;
   width: 100%;
-  padding: 10px;
+  height: 40px;
+  padding-top: 10px;
+  bottom: 0;
+  left: 0;
+  text-align: center;
   border-top: 1px solid #d1d1d1;
-}
-
-.footer p, .footer ul {
-  margin-left: 162px;
-}
-
-.footer p {
-  margin-bottom: 20px;
-}
-
-.footer li {
-  margin-right: 20px;
 }
 
 @media only screen and (min-width: 768px) {

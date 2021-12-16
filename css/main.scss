@@ -2,7 +2,7 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto',arial, sans-serif;
+  font-family: 'Google Sans',arial, sans-serif;
 }
 
 :root {
@@ -42,23 +42,6 @@ input {
   margin: 0 1em 0 0;
 }
 
-h2 {
-  font-weight: normal;
-  margin: 0 0 3px 0;
-}
-
-h2 a {
-  color: rgb(0, 3, 166);
-}
-
-h2 a:hover {
-  text-decoration: underline;
-}
-
-.link {
-  color: green;
-  font-size: 14px;
-}
 
 a {
   text-decoration: none;
@@ -84,6 +67,9 @@ span {
   min-width: 832px;
   align-items: baseline;
   vertical-align: bottom;
+  position: relative;
+  white-space: nowrap;
+  justify-content: space-between;
   border-bottom: 1px solid rgb(209, 209, 209);
 
   .searchToolOptions {
@@ -93,18 +79,9 @@ span {
 
     li {
       padding: 10px;
-    }
-
-    .left {
       float: left;
       margin-right: 10px;
       margin-left: 0px;
-    }
-
-    .right {
-      float: right;
-      margin-right: 0px;
-      margin-left: 10px;
     }
   }
 }
@@ -135,8 +112,23 @@ span {
       display: inline-block;
       max-width: 600px;
 
-      h2, a {
-        white-space:nowrap;
+      .link {
+        color: #202124;
+        font-size: 14px;
+      }
+      
+      h2 {
+        font-weight: normal;
+        margin: 0 0 3px 0;
+      
+        a {
+          white-space:nowrap;
+          color: #1a0dab;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
       }
 
       p {
@@ -148,10 +140,16 @@ span {
 
     .result-visualisation{
       display: flex;
+      justify-content: center;
       
       img {
         margin: 0;
         min-height: 200px;
+        transition: transform .3s;
+      }
+
+      img:hover {
+        transform: scale(2);
       }
     }
   }
@@ -161,20 +159,12 @@ span {
   position: absolute;
   background: #f2f2f2;
   width: 100%;
-  padding: 10px;
+  height: 40px;
+  padding-top: 10px;
+  bottom: 0;
+  left: 0;
+  text-align: center;
   border-top: 1px solid rgb(209, 209, 209);
-
-  p, ul {
-    margin-left: 162px;
-  }
-
-  p {
-    margin-bottom: 20px;
-  }
-
-  li {
-    margin-right: 20px;
-  }
 }
 
 @media only screen and (min-width: 768px) {
