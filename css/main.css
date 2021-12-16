@@ -142,10 +142,15 @@ span {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  max-width: 600px;
 }
 
 .searchResults .result .result-item {
   display: inline-block;
+}
+
+.searchResults .result .result-item h2, .searchResults .result .result-item a {
+  white-space: nowrap;
 }
 
 .searchResults .result .result-item p {

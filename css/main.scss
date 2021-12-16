@@ -130,9 +130,14 @@ span {
   .result {
     margin: 20px 0 20px 0px;
     height: fit-content;
+    max-width: 600px;
 
     .result-item {
       display: inline-block;
+
+      h2, a {
+        white-space:nowrap;
+      }
 
       p {
         margin: 3px 0 1em 0;
