@@ -30,19 +30,6 @@ img {
   vertical-align: top;
 }
 
-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 620px;
-  height: 40px;
-  padding: 10px;
-  border-radius: 20px;
-  border: 1px solid #c7c7c7;
-  vertical-align: top;
-  margin: 0 1em 0 0;
-}
-
 a {
   text-decoration: none;
   color: #303030;
@@ -63,6 +50,19 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 620px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #c7c7c7;
+  vertical-align: top;
+  margin: 0 1em 0 0;
 }
 
 .searchTools {
@@ -159,10 +159,44 @@ span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.searchResults .result .result-rating input {
+.searchResults .result .result-rating .slider {
+  -webkit-appearance: none;
   width: 50%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.searchResults .result .result-rating .slider:hover {
+  opacity: 1;
+}
+
+.searchResults .result .result-rating .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #1A73E8;
+  cursor: pointer;
+}
+
+.searchResults .result .result-rating .slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #1A73E8;
+  cursor: pointer;
 }
 
 .searchResults .result .result-visualisation {
@@ -184,12 +218,13 @@ span {
 }
 
 .searchResults .result .result-visualisation img:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.75);
+          transform: scale(1.75);
+  border: 1px solid #aaaaaa;
 }
 
 .nextPage {
-  margin: 2em;
+  margin: 6em 0 2em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,6 +235,11 @@ span {
 
 .nextPage a {
   font-size: 16pt;
+  color: #1a73e8;
+}
+
+.nextPage a:hover {
+  text-decoration: underline;
 }
 
 .footer {
