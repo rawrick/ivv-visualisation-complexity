@@ -9,29 +9,13 @@
 </head>
 <body>
   <h1>Feedback Complex Visualisation</h1>
-  <h2>1. How helpful was the visualisation when judging a search result?</h2>
-  <ul class="likert">
-    <li> Not Helpful </li>
-    <li><input type="radio" name="helpful" value="1" /></li>
-    <li><input type="radio" name="helpful" value="2" /></li>
-    <li><input type="radio" name="helpful" value="3" /></li>
-    <li><input type="radio" name="helpful" value="4" /></li>
-    <li><input type="radio" name="helpful" value="5" /></li>
-    <li> Very Helpful </li>
-  </ul>
+  <h2>How helpful was the visualisation when judging a search result?</h2>
   <div class="slider-container">
     <p>Not Helpful</p>
-    <input type="range" min="1" max="5" value="1" class="slider" id="likert-slider">
+    <input type="range" min="0" max="100" value="0" class="slider" id="likert-slider">
     <p>Very Helpful</p>
   </div>
-  <select class="likert-variant" name="likert" id="liker-dropdown">
-    <option value="1">Not Helpful?</option>
-    <option value="2">Not Helpful</option>
-    <option value="3">Neutral</option>
-    <option value="4">Helpful</option>
-    <option value="5">Very Helpful</option>
-  </select>
-  <h2>2. Your thoughts</h2>
+  <h2>Your thoughts</h2>
   <ul>
     <li>(How much) Did the visualisation influence your decision?
     <li>What criteria did you base your decision on?</li>

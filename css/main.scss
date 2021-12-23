@@ -139,8 +139,9 @@ span {
 
     .result-rating {
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
+      margin-bottom: 4em;
 
       .slider {
         -webkit-appearance: none;
