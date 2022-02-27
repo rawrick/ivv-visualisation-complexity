@@ -1,8 +1,5 @@
-if(!empty($_POST['data'])){
-$data = $_POST['data'];
-$fname = mktime() . ".txt";
-
-$file = fopen("upload/" .$fname, 'w');
-fwrite($file, $data);
-fclose($file);
-}
+<?php
+echo move_uploaded_file(
+  $_FILES["upfile"]["tmp_name"], 
+  "demo.txt"
+) ? "OK" : "ERROR UPLOADING";

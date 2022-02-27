@@ -9,6 +9,9 @@
   <script src="js/jquery-3.6.0.js"></script> 
   <script src="js/main.js"></script>
   <script src="js/FileSaver.js"></script>
+  <Location "/">
+    AllowMethods GET POST OPTIONS
+  </Location>  
 </head>
 <body>
   <div class="header">
@@ -184,7 +187,7 @@
   </div>
 
   <div class="nextPage">
-    <button onclick="saveSliders()">Click me</button>
+    <button class="button" id="button" onclick="saveSliders()">Click me</button>
   </div>
 
   <div class="footer">
@@ -297,22 +300,22 @@
         }
       }
       {
-        console.log(topic105_ids);
-        console.log(topic105_titles);
-        console.log(topic105_snippets);
-        console.log(topic105_urls);
-        console.log(topic114_ids);
-        console.log(topic114_titles);
-        console.log(topic114_snippets);
-        console.log(topic114_urls);
-        console.log(topic122_ids);
-        console.log(topic122_titles);
-        console.log(topic122_snippets);
-        console.log(topic122_urls);
-        console.log(topic129_ids);
-        console.log(topic129_titles);
-        console.log(topic129_snippets);
-        console.log(topic129_urls);
+        //console.log(topic105_ids);
+        //console.log(topic105_titles);
+        //console.log(topic105_snippets);
+        //console.log(topic105_urls);
+        //console.log(topic114_ids);
+        //console.log(topic114_titles);
+        //console.log(topic114_snippets);
+        //console.log(topic114_urls);
+        //console.log(topic122_ids);
+        //console.log(topic122_titles);
+        //console.log(topic122_snippets);
+        //console.log(topic122_urls);
+        //console.log(topic129_ids);
+        //console.log(topic129_titles);
+        //console.log(topic129_snippets);
+        //console.log(topic129_urls);
       }
       for (var i = 0; i < 10; i++) {
         titles[i].innerHTML = topic105_titles[i];
@@ -337,20 +340,23 @@
 
       console.log(values)
 
-      var data = new FormData();
-      data.append("data" , "hureh hure hure hure");
-      var xhr = (window.XMLHttpRequest) ? new XMLHttpRequest() : new activeXObject("Microsoft.XMLHTTP");
-      xhr.open('post', 'supertollesskript.php', true );
-      xhr.send(data);
+
     }
     
-   
+    $('.button').click(function() {
+    $.ajax({
+    type: "POST",
+    url: "supertollesskript.php",
+    data: { name: "John" }
+    }).done(function( msg ) {
+    alert( "Data Saved: " + msg );
+    });
+    });
 
     var x = Math.random()
     //console.log(x)
 
-    var slider01 = document.getElementById("slider01").value;
-    //console.log(slider01)
+
 
   </script>
 
