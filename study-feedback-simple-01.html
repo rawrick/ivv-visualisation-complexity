@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Complex Visualisation</title>
+  <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+  <h1>Feedback Simple Visualisation</h1>
+  <h2>How helpful was the visualisation when judging a search result?</h2>
+  <div class="slider-container">
+    <p>Not Helpful</p>
+    <input type="range" min="0" max="100" value="0" class="slider" id="helpful-slider">
+    <p>Very Helpful</p>
+  </div>
+  <h2>How confident were you in your judgement?</h2>
+  <div class="slider-container">
+    <p>Not Confident</p>
+    <input type="range" min="0" max="100" value="0" class="slider" id="confident-slider">
+    <p>Very Confident</p>
+  </div>
+  <h2>How hard was it to make a judgement?</h2>
+  <div class="slider-container">
+    <p>Not Hard</p>
+    <input type="range" min="0" max="100" value="0" class="slider" id="hard-slider">
+    <p>Very Hard</p>
+  </div>
+  <h2>Your thoughts</h2>
+  <ul>
+    <li>(How much) Did the visualisation influence your decision?
+    <li>What criteria did you base your decision on?</li>
+    <li>What did you (dis-)like about the presentation of credibility data?</li>
+  </li>
+  </ul>
+  <textarea id="qual-feedback" name="qual-feedback" placeholder="Write something..." style="height:200px"></textarea>
+  <div class="nextPage">
+    <button class="button" id="button" onclick="saveFeedback()">Click me</button>
+  </div>
+
+  <script>
+  function saveFeedback() {
+    var values = [];
+    values.push(document.getElementById("helpful-slider").value);
+    values.push(document.getElementById("confident-slider").value);
+    values.push(document.getElementById("hard-slider").value);
+    var freetext = document.getElementById("qual-feedback").value;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET","feedback_simple_01.php?sliders="+values+"?freetext="+freetext,true);
+    xmlhttp.send();
+  }
+
+</script>
+</body>
+</html>
