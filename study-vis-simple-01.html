@@ -39,6 +39,9 @@
         <input type="range" min="0" max="100" value="0" class="slider" id="slider01">        
         <p>Credible</p>
       </div>
+      <div class="visualisation-simple">
+        <img src="" alt="Visualisation" id="img01">
+      </div>
     </div>
     <div class="result">
       <div class="snippet">
@@ -50,6 +53,9 @@
         <p>Not Credible</p>
         <input type="range" min="0" max="100" value="0" class="slider" id="slider02">        
         <p>Credible</p>
+      </div>
+      <div class="visualisation-simple">
+        <img src="" alt="Visualisation" id="img02">
       </div>
     </div>
     <div class="result">
@@ -63,6 +69,9 @@
         <input type="range" min="0" max="100" value="0" class="slider" id="slider03">        
         <p>Credible</p>
       </div>
+      <div class="visualisation-simple">
+        <img src="" alt="Visualisation" id="img03">
+      </div>
     </div>
     <div class="result">
       <div class="snippet">
@@ -74,6 +83,9 @@
         <p>Not Credible</p>
         <input type="range" min="0" max="100" value="0" class="slider" id="slider04">        
         <p>Credible</p>
+      </div>
+      <div class="visualisation-simple">
+        <img src="" alt="Visualisation" id="img04">
       </div>
     </div>
     <div class="result">
@@ -87,6 +99,9 @@
         <input type="range" min="0" max="100" value="0" class="slider" id="slider05">        
         <p>Credible</p>
       </div>
+      <div class="visualisation-simple">
+        <img src="" alt="Visualisation" id="img05">
+      </div>
     </div>
     <div class="result">
       <div class="snippet">
@@ -98,6 +113,9 @@
         <p>Not Credible</p>
         <input type="range" min="0" max="100" value="0" class="slider" id="slider06">        
         <p>Credible</p>
+      </div>
+      <div class="visualisation-simple">
+        <img src="" alt="Visualisation" id="img06">
       </div>
     </div>
     <div class="result">
@@ -111,6 +129,9 @@
         <input type="range" min="0" max="100" value="0" class="slider" id="slider07">        
         <p>Credible</p>
       </div>
+      <div class="visualisation-simple">
+        <img src="" alt="Visualisation" id="img07">
+      </div>
     </div>
     <div class="result">
       <div class="snippet">
@@ -122,6 +143,9 @@
         <p>Not Credible</p>
         <input type="range" min="0" max="100" value="0" class="slider" id="slider08">        
         <p>Credible</p>
+      </div>
+      <div class="visualisation-simple">
+        <img src="" alt="Visualisation" id="img08">
       </div>
     </div>
     <div class="result">
@@ -135,6 +159,9 @@
         <input type="range" min="0" max="100" value="0" class="slider" id="slider09">        
         <p>Credible</p>
       </div>
+      <div class="visualisation-simple">
+        <img src="" alt="Visualisation" id="img09">
+      </div>
     </div>
     <div class="result">
       <div class="snippet">
@@ -147,13 +174,16 @@
         <input type="range" min="0" max="100" value="0" class="slider" id="slider10">        
         <p>Credible</p>
       </div>
+      <div class="visualisation-simple">
+        <img src="" alt="Visualisation" id="img10">
+      </div>
     </div>
   
   </div>
 
   <div class="nextPage">
-    <a href="study-complex-01.html">
-    <button class="button" id="button" onclick="saveSliders()">Click me</button>
+    <a href="study-feedback-vis-simple-01.html">
+      <button class="button" id="button" onclick="saveSliders()">Click me</button>
     </a>
   </div>
 
@@ -193,10 +223,23 @@
     var url08 = document.getElementById("url08");
     var url09 = document.getElementById("url09");
     var url10 = document.getElementById("url10");
+    
+    var img01 = document.getElementById("img01");
+    var img02 = document.getElementById("img02");
+    var img03 = document.getElementById("img03");
+    var img04 = document.getElementById("img04");
+    var img05 = document.getElementById("img05");
+    var img06 = document.getElementById("img06");
+    var img07 = document.getElementById("img07");
+    var img08 = document.getElementById("img08");
+    var img09 = document.getElementById("img09");
+    var img10 = document.getElementById("img10");
 
     var titles = [title01, title02, title03, title04, title05, title06, title07, title08, title09, title10]
     var snippets = [snippet01, snippet02, snippet03, snippet04, snippet05, snippet06, snippet07, snippet08, snippet09, snippet10]
     var urls = [url01, url02, url03, url04, url05, url06, url07, url08, url09, url10]
+    var imgs = [img01, img02, img03, img04, img05, img06, img07, img08, img09, img10]
+
    
     $.ajax({
         url: 'snippets.csv',
@@ -207,6 +250,7 @@
     var topic105_titles = []
     var topic105_snippets = []
     var topic105_urls = []
+    var topic105_scores = []
     var topic114_ids = []
     var topic114_titles = []
     var topic114_snippets = []
@@ -230,6 +274,7 @@
             topic105_titles.push(rowCells[3]);
             topic105_snippets.push(rowCells[4]);
             topic105_urls.push(rowCells[5]);
+            topic105_scores.push(rowCells[6])
             break;
           case '114': 
             topic114_ids.push(rowCells[2]);
@@ -255,6 +300,7 @@
         titles[i].innerHTML = topic105_titles[i];
         snippets[i].innerHTML = topic105_snippets[i];
         urls[i].innerHTML = topic105_urls[i];
+        imgs[i].src = 'img/star-' + topic105_scores[i] + '.png';
       }
     }
     
@@ -272,7 +318,7 @@
       values.push(document.getElementById("slider10").value);
 
       var xmlhttp=new XMLHttpRequest();
-      xmlhttp.open("GET","sliders_no_vis_01.php?sliders="+values,true);
+      xmlhttp.open("GET","sliders_simple_01.php?sliders="+values,true);
       xmlhttp.send();
     }
 

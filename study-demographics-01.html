@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abfrage demographischer Daten</title>
+    <link rel="stylesheet" type="text/css" href="css/demographics.css">
+</head>
+<body>
+    <form>
+        <label for="age">Alter</label><br>
+        <input type="text" id="age" name="age"><br>
+        <p>Geschlecht</p>
+        <input type="radio" id="männlich" name="gender" value="männlich">
+        <label for="männlich">männlich</label><br>
+        <input type="radio" id="weiblich" name="gender" value="weiblich">
+        <label for="weiblich">weiblich</label><br>
+        <input type="radio" id="divers" name="gender" value="divers">
+        <label for="divers">divers</label><br>
+        <label for="occupation">Beruf (Studierende: bitte Studiengang mit angeben)</label><br>
+        <input type="text" id="occupation" name="occupation"><br>
+        <input type="checkbox" id="vpStunden" name="vpStunden" onclick="onCheckBoxClicked(event)">
+        <label for="vpStuden">Ich studiere Medieninformatik/Informationswissenschaft an der Universität Regensburg und möchte 0,5 Versuchspersonen-Stunden angerechnet bekommen</label><br>
+        <div class="email hidden">
+            <label for="email">Bitte geben Sie hier Ihre Uni-Mailadresse an</label><br>
+            <input type="text" placeholder="...@stud.uni-regensburg.de" id="email" name="email">
+        </div>
+    </form>
+
+    <div class="nextPage">
+        <a href="endscreen.html">
+            <button class="button" id="button" onclick="saveDemographics()">Click me</button>
+        </a>
+    </div>
+
+    <script>
+    function onCheckBoxClicked(event) {
+        document.querySelector(".email").classList.toggle("hidden");
+            if (event.target.checked) {
+                scrollTo(0, document.body.scrollHeight);
+            }
+        };
+
+    function saveDemographics() {
+        var age = document.getElementById('age').value;
+        var gender = document.querySelector('input[name="gender"]:checked').value;
+        var occupation = document.getElementById('occupation').value;
+        var email = document.getElementById('email').value;
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET","demographics_01.php?age="+age+"?gender="+gender+"?occupation="+occupation+"?email="+email,true);
+        xmlhttp.send();
+    }
+    </script>
+</body>
+</html>

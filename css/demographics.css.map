@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,kBAAkB,EAAE,UAAU;EAC3B,eAAe,EAAE,UAAU;EACtB,UAAU,EAAE,UAAU;EAC9B,WAAW,EAAE,+BAA+B;CAC7C;;AAEH,AAAA,OAAO,CAAC;EACJ,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "demographics.scss"
+    ],
+    "names": [],
+    "file": "demographics.css"
+}

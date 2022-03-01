@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Complex Visualisation</title>
+  <title>Simple Visualisation</title>
   <link rel="stylesheet" href="css/main.css">
-  <script src="js/jquery-3.6.0.js"></script> 
+  <script src="js/jquery-3.6.0.js"></script>
 </head>
 <body>
   <div class="header">
@@ -39,9 +39,6 @@
         <input type="range" min="0" max="100" value="0" class="slider" id="slider01">        
         <p>Credible</p>
       </div>
-      <div class="visualisation-complex">
-        <img src="img/spider-noscale.png" alt="Visualisation" id="img01">
-      </div>
     </div>
     <div class="result">
       <div class="snippet">
@@ -53,9 +50,6 @@
         <p>Not Credible</p>
         <input type="range" min="0" max="100" value="0" class="slider" id="slider02">        
         <p>Credible</p>
-      </div>
-      <div class="visualisation-complex">
-        <img src="img/spider-noscale.png" alt="Visualisation" id="img02">
       </div>
     </div>
     <div class="result">
@@ -69,9 +63,6 @@
         <input type="range" min="0" max="100" value="0" class="slider" id="slider03">        
         <p>Credible</p>
       </div>
-      <div class="visualisation-complex">
-        <img src="img/spider-noscale.png" alt="Visualisation" id="img03">
-      </div>
     </div>
     <div class="result">
       <div class="snippet">
@@ -83,9 +74,6 @@
         <p>Not Credible</p>
         <input type="range" min="0" max="100" value="0" class="slider" id="slider04">        
         <p>Credible</p>
-      </div>
-      <div class="visualisation-complex">
-        <img src="img/spider-noscale.png" alt="Visualisation" id="img04">
       </div>
     </div>
     <div class="result">
@@ -99,9 +87,6 @@
         <input type="range" min="0" max="100" value="0" class="slider" id="slider05">        
         <p>Credible</p>
       </div>
-      <div class="visualisation-complex">
-        <img src="img/spider-noscale.png" alt="Visualisation" id="img05">
-      </div>
     </div>
     <div class="result">
       <div class="snippet">
@@ -113,9 +98,6 @@
         <p>Not Credible</p>
         <input type="range" min="0" max="100" value="0" class="slider" id="slider06">        
         <p>Credible</p>
-      </div>
-      <div class="visualisation-complex">
-        <img src="img/spider-noscale.png" alt="Visualisation" id="img06">
       </div>
     </div>
     <div class="result">
@@ -129,9 +111,6 @@
         <input type="range" min="0" max="100" value="0" class="slider" id="slider07">        
         <p>Credible</p>
       </div>
-      <div class="visualisation-complex">
-        <img src="img/spider-noscale.png" alt="Visualisation" id="img07">
-      </div>
     </div>
     <div class="result">
       <div class="snippet">
@@ -143,9 +122,6 @@
         <p>Not Credible</p>
         <input type="range" min="0" max="100" value="0" class="slider" id="slider08">        
         <p>Credible</p>
-      </div>
-      <div class="visualisation-complex">
-        <img src="img/spider-noscale.png" alt="Visualisation" id="img08">
       </div>
     </div>
     <div class="result">
@@ -159,9 +135,6 @@
         <input type="range" min="0" max="100" value="0" class="slider" id="slider09">        
         <p>Credible</p>
       </div>
-      <div class="visualisation-complex">
-        <img src="img/spider-noscale.png" alt="Visualisation" id="img09">
-      </div>
     </div>
     <div class="result">
       <div class="snippet">
@@ -174,18 +147,15 @@
         <input type="range" min="0" max="100" value="0" class="slider" id="slider10">        
         <p>Credible</p>
       </div>
-      <div class="visualisation-complex">
-        <img src="img/spider-noscale.png" alt="Visualisation" id="img10">
-      </div>
     </div>
   
   </div>
 
-  <a href="study-feedback-complex-01.html">
-    <div class="nextPage">
+  <div class="nextPage">
+    <a href="study-vis-simple-01.html">
       <button class="button" id="button" onclick="saveSliders()">Click me</button>
-    </div>
-  </a>
+    </a>
+  </div>
 
   <div class="footer">
   </div>
@@ -223,23 +193,10 @@
     var url08 = document.getElementById("url08");
     var url09 = document.getElementById("url09");
     var url10 = document.getElementById("url10");
-    
-    var img01 = document.getElementById("img01");
-    var img02 = document.getElementById("img02");
-    var img03 = document.getElementById("img03");
-    var img04 = document.getElementById("img04");
-    var img05 = document.getElementById("img05");
-    var img06 = document.getElementById("img06");
-    var img07 = document.getElementById("img07");
-    var img08 = document.getElementById("img08");
-    var img09 = document.getElementById("img09");
-    var img10 = document.getElementById("img10");
 
     var titles = [title01, title02, title03, title04, title05, title06, title07, title08, title09, title10]
     var snippets = [snippet01, snippet02, snippet03, snippet04, snippet05, snippet06, snippet07, snippet08, snippet09, snippet10]
     var urls = [url01, url02, url03, url04, url05, url06, url07, url08, url09, url10]
-    var imgs = [img01, img02, img03, img04, img05, img06, img07, img08, img09, img10]
-
    
     $.ajax({
         url: 'snippets.csv',
@@ -294,29 +251,10 @@
             break;
         }
       }
-      {
-        //console.log(topic105_ids);
-        //console.log(topic105_titles);
-        //console.log(topic105_snippets);
-        //console.log(topic105_urls);
-        //console.log(topic114_ids);
-        //console.log(topic114_titles);
-        //console.log(topic114_snippets);
-        //console.log(topic114_urls);
-        //console.log(topic122_ids);
-        //console.log(topic122_titles);
-        //console.log(topic122_snippets);
-        //console.log(topic122_urls);
-        //console.log(topic129_ids);
-        //console.log(topic129_titles);
-        //console.log(topic129_snippets);
-        //console.log(topic129_urls);
-      }
       for (var i = 0; i < 10; i++) {
         titles[i].innerHTML = topic105_titles[i];
         snippets[i].innerHTML = topic105_snippets[i];
         urls[i].innerHTML = topic105_urls[i];
-        imgs[i].src = 'img/' + topic105_ids[i] + '.png';
       }
     }
     
@@ -334,7 +272,7 @@
       values.push(document.getElementById("slider10").value);
 
       var xmlhttp=new XMLHttpRequest();
-      xmlhttp.open("GET","sliders_complex_01.php?sliders="+values,true);
+      xmlhttp.open("GET","sliders_no_vis_01.php?sliders="+values,true);
       xmlhttp.send();
     }
 
