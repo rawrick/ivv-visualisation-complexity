@@ -8,35 +8,34 @@
   <link rel="stylesheet" href="css/feedback.css">
 </head>
 <body>
-  <h1>Feedback Complex Visualisation</h1>
-  <h2>How helpful was the visualisation when judging a search result?</h2>
+  <h2>Wie hilfreich war die Visualisierung beim Bewerten der Suchergebnisse?</h2>
   <div class="slider-container">
-    <p>Not Helpful</p>
+    <p>Nicht hilfreich</p>
     <input type="range" min="0" max="100" value="0" class="slider" id="helpful-slider">
-    <p>Very Helpful</p>
+    <p>Sehr hilfreich</p>
   </div>
-  <h2>How confident were you in your judgement?</h2>
+  <h2>Wie sicher waren Sie sich in Ihrem Urteil der Glaubwürdigkeit?</h2>
   <div class="slider-container">
-    <p>Not Confident</p>
+    <p>Nicht sicher</p>
     <input type="range" min="0" max="100" value="0" class="slider" id="confident-slider">
-    <p>Very Confident</p>
+    <p>Sehr schwer</p>
   </div>
-  <h2>How hard was it to make a judgement?</h2>
+  <h2>Wie schwer fiel es Ihnen ein Urteil zu fällen?</h2>
   <div class="slider-container">
-    <p>Not Hard</p>
+    <p>Nicht schwer</p>
     <input type="range" min="0" max="100" value="0" class="slider" id="hard-slider">
-    <p>Very Hard</p>
+    <p>Sehr schwer</p>
   </div>
-  <h2>Your thoughts</h2>
+  <h2>Offene Fragen</h2>
   <ul>
-    <li>(How much) Did the visualisation influence your decision?
-    <li>What criteria did you base your decision on?</li>
-    <li>What did you (dis-)like about the presentation of credibility data?</li>
+    <li>(Wie sehr) Hat die Visualisierung Ihr Urteil beeinflusst?
+    <li>Auf welchen Kriterien basiert Ihr Urteil?</li>
+    <li>Was hat Ihnen bei der Präsentation der Visualisierungen gefallen bzw. nicht gefallen?</li>
   </li>
   </ul>
-  <textarea id="qual-feedback" name="qual-feedback" placeholder="Write something..." style="height:200px"></textarea>
+  <textarea id="qual-feedback" name="qual-feedback" style="height:200px"></textarea>
   <div class="nextPage">
-    <button class="button" id="button" onclick="saveFeedback()">Click me</button>
+    <button class="button" id="button" onclick="saveFeedback()">Weiter</button>
   </div>
 
   <script>
