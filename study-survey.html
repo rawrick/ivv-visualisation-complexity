@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umfrage</title>
+  <link rel="stylesheet" href="css/survey.css">
+  <script src="js/jquery-3.6.0.js"></script>
+</head>
+<body>  
+  <div class="divs">
+    <div class="showhide">
+      <div class="serp">
+    <div class="header">
+        <a href="index.html"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo"></a>
+        <input type="text" name="" value="can eating dates help manange iron deficiency anemia">
+      </div>
+      <div class="searchTools">
+        <ul class="searchToolOptions">
+          <li class="active"><a href="">All</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Shopping</a></li>
+          <li><a href="#">Maps</a></li>
+          <li><a href="#">More</a></li>
+        </ul>
+      </div>
+      <div class="searchResults">
+        <p class="numberOfResults">About 142,000,000 results (0.48 seconds)</p>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url01"></a>
+            <h2><a href="#" id="title01"></a></h2>
+            <p id="snippet01"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider01">        
+            <p>Credible</p>
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url02"></a>
+            <h2><a href="#" id="title02"></a></h2>
+            <p id="snippet02"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider02">        
+            <p>Credible</p>
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url03"></a>
+            <h2><a href="#" id="title03"></a></h2>
+            <p id="snippet03"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider03">        
+            <p>Credible</p>
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url04"></a>
+            <h2><a href="#" id="title04"></a></h2>
+            <p id="snippet04"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider04">        
+            <p>Credible</p>
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url05"></a>
+            <h2><a href="#" id="title05"></a></h2>
+            <p id="snippet05"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider05">        
+            <p>Credible</p>
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url06"></a>
+            <h2><a href="#" id="title06"></a></h2>
+            <p id="snippet06"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider06">        
+            <p>Credible</p>
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url07"></a>
+            <h2><a href="#" id="title07"></a></h2>
+            <p id="snippet07"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider07">        
+            <p>Credible</p>
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url08"></a>
+            <h2><a href="#" id="title08"></a></h2>
+            <p id="snippet08"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider08">        
+            <p>Credible</p>
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url09"></a>
+            <h2><a href="#" id="title09"></a></h2>
+            <p id="snippet09"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider09">        
+            <p>Credible</p>
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url10"></a>
+            <h2><a href="#" id="title10"></a></h2>
+            <p id="snippet10"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider10">        
+            <p>Credible</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="showhide">
+      <div class="feedback">
+    <h2>Wie sicher waren Sie sich in Ihrem Urteil der Glaubwürdigkeit?</h2>
+    <div class="slider-container">
+      <p>Nicht sicher</p>
+      <input type="range" min="0" max="100" value="0" class="slider" id="confident-slider-1">
+      <p>Sehr sicher</p>
+    </div>
+    <h2>Wie schwer fiel es Ihnen ein Urteil zu fällen?</h2>
+    <div class="slider-container">
+      <p>Nicht schwer</p>
+      <input type="range" min="0" max="100" value="0" class="slider" id="hard-slider-1">
+      <p>Sehr schwer</p>
+    </div>
+    <p>
+      Auf welchen Kriterien basiert Ihr Urteil?
+    </p> 
+    <textarea id="qual-feedback-1" name="qual-feedback" style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="showhide">
+      <div class="serp">
+    <div class="header">
+        <a href="index.html"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo"></a>
+        <input type="text" name="" value="can eating dates help manange iron deficiency anemia">
+      </div>
+      <div class="searchTools">
+        <ul class="searchToolOptions">
+          <li class="active"><a href="">All</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Shopping</a></li>
+          <li><a href="#">Maps</a></li>
+          <li><a href="#">More</a></li>
+        </ul>
+      </div>
+      <div class="searchResults">
+        <p class="numberOfResults">About 142,000,000 results (0.48 seconds)</p>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url11"></a>
+            <h2><a href="#" id="title11"></a></h2>
+            <p id="snippet11"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider11">        
+            <p>Credible</p>
+          </div>
+          <div class="visualisation">
+            <img src="" alt="Visualisation" id="img11">
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url12"></a>
+            <h2><a href="#" id="title12"></a></h2>
+            <p id="snippet12"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider12">        
+            <p>Credible</p>
+          </div>
+          <div class="visualisation">
+            <img src="" alt="Visualisation" id="img12">
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url13"></a>
+            <h2><a href="#" id="title13"></a></h2>
+            <p id="snippet13"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider13">        
+            <p>Credible</p>
+          </div>
+          <div class="visualisation">
+            <img src="" alt="Visualisation" id="img13">
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url14"></a>
+            <h2><a href="#" id="title14"></a></h2>
+            <p id="snippet14"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider14">        
+            <p>Credible</p>
+          </div>
+          <div class="visualisation">
+            <img src="" alt="Visualisation" id="img14">
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url15"></a>
+            <h2><a href="#" id="title15"></a></h2>
+            <p id="snippet15"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider15">        
+            <p>Credible</p>
+          </div>
+          <div class="visualisation">
+            <img src="" alt="Visualisation" id="img15">
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url16"></a>
+            <h2><a href="#" id="title16"></a></h2>
+            <p id="snippet16"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider16">        
+            <p>Credible</p>
+          </div>
+          <div class="visualisation">
+            <img src="" alt="Visualisation" id="img16">
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url17"></a>
+            <h2><a href="#" id="title17"></a></h2>
+            <p id="snippet17"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider17">        
+            <p>Credible</p>
+          </div>
+          <div class="visualisation">
+            <img src="" alt="Visualisation" id="img17">
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url18"></a>
+            <h2><a href="#" id="title18"></a></h2>
+            <p id="snippet18"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider18">        
+            <p>Credible</p>
+          </div>
+          <div class="visualisation">
+            <img src="" alt="Visualisation" id="img18">
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url19"></a>
+            <h2><a href="#" id="title19"></a></h2>
+            <p id="snippet19"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider19">        
+            <p>Credible</p>
+          </div>
+          <div class="visualisation">
+            <img src="" alt="Visualisation" id="img19">
+          </div>
+        </div>
+        <div class="result">
+          <div class="snippet">
+            <a class="link" href="#" id="url20"></a>
+            <h2><a href="#" id="title20"></a></h2>
+            <p id="snippet20"></p>
+          </div>
+          <div class="rating">
+            <p>Not Credible</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider20">        
+            <p>Credible</p>
+          </div>
+          <div class="visualisation">
+            <img src="" alt="Visualisation" id="img20">
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="showhide">
+      <div class="feedback">
+    <h2>Wie hilfreich war die Visualisierung beim Bewerten der Suchergebnisse?</h2>
+    <div class="slider-container">
+      <p>Nicht hilfreich</p>
+      <input type="range" min="0" max="100" value="0" class="slider" id="helpful-slider-2">
+      <p>Sehr hilfreich</p>
+    </div>
+    <h2>Wie sicher waren Sie sich in Ihrem Urteil der Glaubwürdigkeit?</h2>
+    <div class="slider-container">
+      <p>Nicht sicher</p>
+      <input type="range" min="0" max="100" value="0" class="slider" id="confident-slider-2">
+      <p>Sehr schwer</p>
+    </div>
+    <h2>Wie schwer fiel es Ihnen ein Urteil zu fällen?</h2>
+    <div class="slider-container">
+      <p>Nicht schwer</p>
+      <input type="range" min="0" max="100" value="0" class="slider" id="hard-slider-2">
+      <p>Sehr schwer</p>
+    </div>
+    <h2>Offene Fragen</h2>
+    <ul>
+      <li>(Wie sehr) Hat die Visualisierung Ihr Urteil beeinflusst?
+      <li>Auf welchen Kriterien basiert Ihr Urteil?</li>
+      <li>Was hat Ihnen bei der Präsentation der Visualisierungen gefallen bzw. nicht gefallen?</li>
+    </li>
+    </ul>
+    <textarea id="qual-feedback-2" name="qual-feedback" style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="showhide">
+      <div class="demographics">
+      <form>
+        <label for="age">Alter</label><br>
+        <input type="text" id="age" name="age"><br>
+        <p>Geschlecht</p>
+        <input type="radio" id="männlich" name="gender" value="n">
+        <label for="männlich">männlich</label><br>
+        <input type="radio" id="weiblich" name="gender" value="w">
+        <label for="weiblich">weiblich</label><br>
+        <input type="radio" id="divers" name="gender" value="d">
+        <label for="divers">divers</label><br>
+        <input type="radio" id="ka" name="gender" value="na">
+        <label for="ka">keine Angabe</label><br>
+        <label for="occupation">Beruf (Studierende: bitte Studiengang mit angeben)</label><br>
+        <input type="text" id="occupation" name="occupation"><br>
+        <input type="checkbox" id="vpStunden" name="vpStunden" onclick="onCheckBoxClicked(event)">
+        <label for="vpStuden">Ich studiere Medieninformatik/Informationswissenschaft an der Universität Regensburg und möchte 0,5 Versuchspersonen-Stunden angerechnet bekommen</label><br>
+        <div class="email hidden">
+            <label for="email">Bitte geben Sie hier Ihre Uni-Mailadresse an</label><br>
+            <input type="text" placeholder="...@stud.uni-regensburg.de" id="email" name="email">
+        </div>
+      </form>
+      <div class="nextPage">
+        <a href="#">
+          <button class="button" id="button" onclick="saveData()">Umfrage abschließen</button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navigation">
+      <a id="prev">Zurück</a>
+      <a id="next">Weiter</a>
+  </div>
+
+  <script>
+
+    // navigation
+    $(document).ready(function(){
+        $(".divs .showhide").each(function(e) {
+            if (e != 0)
+                $(this).hide();
+        });
+
+        $("#next").click(function(){
+            if ($(".divs .showhide:visible").next().length != 0)
+                $(".divs .showhide:visible").next().show().prev().hide();
+            else {
+                $(".divs .showhide:visible").hide();
+                $(".divs .showhide:first").show();
+            }
+            return false;
+        });
+
+        $("#prev").click(function(){
+            if ($(".divs .showhide:visible").prev().length != 0)
+                $(".divs .showhide:visible").prev().show().next().hide();
+            else {
+                $(".divs .showhide:visible").hide();
+                $(".divs .showhide:last").show();
+            }
+            return false;
+        });
+    });
+
+    // SERP 1
+    var title_01 = document.getElementById("title01");
+    var title_02 = document.getElementById("title02");
+    var title_03 = document.getElementById("title03");
+    var title_04 = document.getElementById("title04");
+    var title_05 = document.getElementById("title05");
+    var title_06 = document.getElementById("title06");
+    var title_07 = document.getElementById("title07");
+    var title_08 = document.getElementById("title08");
+    var title_09 = document.getElementById("title09");
+    var title_10 = document.getElementById("title10");
+    var snippet_01 = document.getElementById("snippet01");
+    var snippet_02 = document.getElementById("snippet02");
+    var snippet_03 = document.getElementById("snippet03");
+    var snippet_04 = document.getElementById("snippet04");
+    var snippet_05 = document.getElementById("snippet05");
+    var snippet_06 = document.getElementById("snippet06");
+    var snippet_07 = document.getElementById("snippet07");
+    var snippet_08 = document.getElementById("snippet08");
+    var snippet_09 = document.getElementById("snippet09");
+    var snippet_10 = document.getElementById("snippet10");
+    var url_01 = document.getElementById("url01");
+    var url_02 = document.getElementById("url02");
+    var url_03 = document.getElementById("url03");
+    var url_04 = document.getElementById("url04");
+    var url_05 = document.getElementById("url05");
+    var url_06 = document.getElementById("url06");
+    var url_07 = document.getElementById("url07");
+    var url_08 = document.getElementById("url08");
+    var url_09 = document.getElementById("url09");
+    var url_10 = document.getElementById("url10");
+    // SERP 2	
+    var title_11 = document.getElementById("title11");
+    var title_12 = document.getElementById("title12");
+    var title_13 = document.getElementById("title13");
+    var title_14 = document.getElementById("title14");
+    var title_15 = document.getElementById("title15");
+    var title_16 = document.getElementById("title16");
+    var title_17 = document.getElementById("title17");
+    var title_18 = document.getElementById("title18");
+    var title_19 = document.getElementById("title19");
+    var title_20 = document.getElementById("title20");
+    var snippet_11 = document.getElementById("snippet11");
+    var snippet_12 = document.getElementById("snippet12");
+    var snippet_13 = document.getElementById("snippet13");
+    var snippet_14 = document.getElementById("snippet14");
+    var snippet_15 = document.getElementById("snippet15");
+    var snippet_16 = document.getElementById("snippet16");
+    var snippet_17 = document.getElementById("snippet17");
+    var snippet_18 = document.getElementById("snippet18");
+    var snippet_19 = document.getElementById("snippet19");
+    var snippet_20 = document.getElementById("snippet20");
+    var url_11 = document.getElementById("url11");
+    var url_12 = document.getElementById("url12");
+    var url_13 = document.getElementById("url13");
+    var url_14 = document.getElementById("url14");
+    var url_15 = document.getElementById("url15");
+    var url_16 = document.getElementById("url16");
+    var url_17 = document.getElementById("url17");
+    var url_18 = document.getElementById("url18");
+    var url_19 = document.getElementById("url19");
+    var url_20 = document.getElementById("url20");
+    var img_01 = document.getElementById("img11");
+    var img_02 = document.getElementById("img12");
+    var img_03 = document.getElementById("img13");
+    var img_04 = document.getElementById("img14");
+    var img_05 = document.getElementById("img15");
+    var img_06 = document.getElementById("img16");
+    var img_07 = document.getElementById("img17");
+    var img_08 = document.getElementById("img18");
+    var img_09 = document.getElementById("img19");
+    var img_10 = document.getElementById("img20");
+    // SERP 1
+    var titles_1 = [title_01, title_02, title_03, title_04, title_05, title_06, title_07, title_08, title_09, title_10];
+    var snippets_1 = [snippet_01, snippet_02, snippet_03, snippet_04, snippet_05, snippet_06, snippet_07, snippet_08, snippet_09, snippet_10];
+    var urls_1 = [url_01, url_02, url_03, url_04, url_05, url_06, url_07, url_08, url_09, url_10];
+    // SERP 2
+    var titles_2 = [title_11, title_12, title_13, title_14, title_15, title_16, title_17, title_18, title_19, title_20];
+    var snippets_2 = [snippet_11, snippet_12, snippet_13, snippet_14, snippet_15, snippet_16, snippet_17, snippet_18, snippet_19, snippet_20];
+    var urls_2 = [url_11, url_12, url_13, url_14, url_15, url_16, url_17, url_18, url_19, url_20];
+    var imgs = [img_01, img_02, img_03, img_04, img_05, img_06, img_07, img_08, img_09, img_10];
+ 
+    var topic105_ids = [];
+    var topic105_titles = [];
+    var topic105_snippets = [];
+    var topic105_urls = [];
+    var topic105_scores = [];
+    var topic114_ids = [];
+    var topic114_titles = [];
+    var topic114_snippets = [];
+    var topic114_urls = [];
+    var topic114_scores = [];
+    var topic122_ids = [];
+    var topic122_titles = [];
+    var topic122_snippets = [];
+    var topic122_urls = [];
+    var topic122_scores = [];
+    var topic129_ids = [];
+    var topic129_titles = [];
+    var topic129_snippets = [];
+    var topic129_urls = [];
+    var topic129_scores = [];
+
+    $.ajax({
+        url: 'main.txt',
+        dataType: 'text',
+    }).done(successFunction);
+
+    // boolean that determines group
+    var group;
+
+    function successFunction(text) {
+        var nLines = 1;
+        for(var i = 0, n = text.length; i < n; ++i) {
+            if(text[i] === '\n') {
+                ++nLines;
+            }
+        }
+
+        if (nLines % 2 == 0) {
+            group = true;
+        } else {
+            group = false;
+        }
+        $.ajax({
+            url: 'snippets.csv',
+            dataType: 'text',
+        }).done(readCSV);
+    }
+
+    function readCSV(data) {
+      var allRows = data.split(/\r?\n|\r/);
+      for (var i = 1; i < allRows.length; i++) {
+        var rowCells = allRows[i].split('~');      
+        switch (rowCells[1]) {
+          case '105': 
+            topic105_ids.push(rowCells[2]);
+            topic105_titles.push(rowCells[3]);
+            topic105_snippets.push(rowCells[4]);
+            topic105_urls.push(rowCells[5]);
+            topic105_scores.push(rowCells[6]);
+            break;
+          case '114': 
+            topic114_ids.push(rowCells[2]);
+            topic114_titles.push(rowCells[3]);
+            topic114_snippets.push(rowCells[4]);
+            topic114_urls.push(rowCells[5]);
+            topic114_scores.push(rowCells[6]);
+            break;
+          case '122': 
+            topic122_ids.push(rowCells[2]);
+            topic122_titles.push(rowCells[3]);
+            topic122_snippets.push(rowCells[4]);
+            topic122_urls.push(rowCells[5]);
+            topic122_scores.push(rowCells[6]);
+            break;
+          case '129': 
+            topic129_ids.push(rowCells[2]);
+            topic129_titles.push(rowCells[3]);
+            topic129_snippets.push(rowCells[4]);
+            topic129_urls.push(rowCells[5]);
+            topic129_scores.push(rowCells[6]);
+            break;
+        }
+      }
+      loadSERPs();
+    }
+
+    // TODO: load random topics for SERP 1 and SERP 2, a single topics MUST NOT appear in both no_vis & simple/complex_vis
+    // loads contents of SERPS based on group
+    function loadSERPs() {
+        for (var i = 0; i < 10; i++) {
+            // SERP 1
+            titles_1[i].innerHTML = topic105_titles[i];
+            snippets_1[i].innerHTML = topic105_snippets[i];
+            urls_1[i].innerHTML = topic105_urls[i];
+            // SERP 2
+            titles_2[i].innerHTML = topic105_titles[i];
+            snippets_2[i].innerHTML = topic105_snippets[i];
+            urls_2[i].innerHTML = topic105_urls[i];
+            if (group) {
+                imgs[i].src = 'img/star-' + topic105_scores[i] + '.png';
+            } else {
+                imgs[i].src = 'img/' + topic105_ids[i] + '.png';
+            }
+        }
+    }
+
+    // saves submitted data
+    function saveData() {
+        var id = 12;
+        // SERP 1
+        var sliders_1 = [];
+        sliders_1.push(document.getElementById("slider01").value);
+        sliders_1.push(document.getElementById("slider02").value);
+        sliders_1.push(document.getElementById("slider03").value);
+        sliders_1.push(document.getElementById("slider04").value);
+        sliders_1.push(document.getElementById("slider05").value);
+        sliders_1.push(document.getElementById("slider06").value);
+        sliders_1.push(document.getElementById("slider07").value);
+        sliders_1.push(document.getElementById("slider08").value);
+        sliders_1.push(document.getElementById("slider09").value);
+        sliders_1.push(document.getElementById("slider10").value);
+        // FEEDBACK 1
+        var feedback_1 = [];
+        feedback_1.push(document.getElementById("confident-slider-1").value);
+        feedback_1.push(document.getElementById("hard-slider-1").value);
+        var freetext_1 = document.getElementById("qual-feedback-1").value;
+        // SERP 2
+        var sliders_2 = [];
+        sliders_2.push(document.getElementById("slider11").value);
+        sliders_2.push(document.getElementById("slider12").value);
+        sliders_2.push(document.getElementById("slider13").value);
+        sliders_2.push(document.getElementById("slider14").value);
+        sliders_2.push(document.getElementById("slider15").value);
+        sliders_2.push(document.getElementById("slider16").value);
+        sliders_2.push(document.getElementById("slider17").value);
+        sliders_2.push(document.getElementById("slider18").value);
+        sliders_2.push(document.getElementById("slider19").value);
+        sliders_2.push(document.getElementById("slider20").value);
+        // FEEDBACK 2
+        var feedback_2 = [];
+        feedback_2.push(document.getElementById("helpful-slider-2").value);
+        feedback_2.push(document.getElementById("confident-slider-2").value);
+        feedback_2.push(document.getElementById("hard-slider-2").value);
+        var freetext_2 = document.getElementById("qual-feedback-2").value;
+        // DEMOGRAPHIC DATA
+        var age = document.getElementById('age').value;
+        var gender = document.querySelector('input[name="gender"]:checked').value;
+        var occupation = document.getElementById('occupation').value;
+        var email = document.getElementById('email').value;
+        // save to server file
+        var xmlhttp=new XMLHttpRequest();
+        xmlhttp.open("GET","main.php?id="+id+"&age="+age+"&gender="+gender+"&occupation="+occupation
+                           +"&sliders_1="+sliders_1+"&feedback_1="+feedback_1+"&freetext_1="+freetext_1
+                           +"&sliders_2="+sliders_2+"&feedback_2="+feedback_2+"&freetext_2="+freetext_2,
+                           true);
+        xmlhttp.send();
+    }
+  </script>
+</body>
+</html>
