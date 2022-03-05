@@ -1,442 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Umfrage</title>
+  <title>Survey: How complex should credibility visualisations be?</title>
   <link rel="stylesheet" href="css/survey.css">
   <script src="js/jquery-3.6.0.js"></script>
 </head>
-<body>  
+
+<body>
+  <div class="navigation">
+    <button class="btn" id="prev">Zurück</button>
+    <button class="btn" id="next">Weiter</button>
+  </div>
+
   <div class="divs">
     <div class="showhide">
-      <div class="serp">
-    <div class="header">
-        <a href="index.html"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo"></a>
-        <input type="text" name="" value="can eating dates help manange iron deficiency anemia">
-      </div>
-      <div class="searchTools">
-        <ul class="searchToolOptions">
-          <li class="active"><a href="">All</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">Shopping</a></li>
-          <li><a href="#">Maps</a></li>
-          <li><a href="#">More</a></li>
-        </ul>
-      </div>
-      <div class="searchResults">
-        <p class="numberOfResults">About 142,000,000 results (0.48 seconds)</p>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url01"></a>
-            <h2><a href="#" id="title01"></a></h2>
-            <p id="snippet01"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider01">        
-            <p>Credible</p>
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url02"></a>
-            <h2><a href="#" id="title02"></a></h2>
-            <p id="snippet02"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider02">        
-            <p>Credible</p>
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url03"></a>
-            <h2><a href="#" id="title03"></a></h2>
-            <p id="snippet03"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider03">        
-            <p>Credible</p>
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url04"></a>
-            <h2><a href="#" id="title04"></a></h2>
-            <p id="snippet04"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider04">        
-            <p>Credible</p>
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url05"></a>
-            <h2><a href="#" id="title05"></a></h2>
-            <p id="snippet05"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider05">        
-            <p>Credible</p>
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url06"></a>
-            <h2><a href="#" id="title06"></a></h2>
-            <p id="snippet06"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider06">        
-            <p>Credible</p>
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url07"></a>
-            <h2><a href="#" id="title07"></a></h2>
-            <p id="snippet07"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider07">        
-            <p>Credible</p>
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url08"></a>
-            <h2><a href="#" id="title08"></a></h2>
-            <p id="snippet08"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider08">        
-            <p>Credible</p>
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url09"></a>
-            <h2><a href="#" id="title09"></a></h2>
-            <p id="snippet09"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider09">        
-            <p>Credible</p>
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url10"></a>
-            <h2><a href="#" id="title10"></a></h2>
-            <p id="snippet10"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider10">        
-            <p>Credible</p>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
-    <div class="showhide">
-      <div class="feedback">
-    <h2>Wie sicher waren Sie sich in Ihrem Urteil der Glaubwürdigkeit?</h2>
-    <div class="slider-container">
-      <p>Nicht sicher</p>
-      <input type="range" min="0" max="100" value="0" class="slider" id="confident-slider-1">
-      <p>Sehr sicher</p>
-    </div>
-    <h2>Wie schwer fiel es Ihnen ein Urteil zu fällen?</h2>
-    <div class="slider-container">
-      <p>Nicht schwer</p>
-      <input type="range" min="0" max="100" value="0" class="slider" id="hard-slider-1">
-      <p>Sehr schwer</p>
-    </div>
-    <p>
-      Auf welchen Kriterien basiert Ihr Urteil?
-    </p> 
-    <textarea id="qual-feedback-1" name="qual-feedback" style="height:200px"></textarea>
+      <div class="explanations">
+        <h1>NUR RANKING - KEINE VISUALISIERUNG</h1>
+        <p>
+          Im Folgenden werden Sie eine Suchergebnisseite sehen, bei der die einzelnen Ergebnisse nur anhand der Relevanz sortiert sind.
+        </p>
       </div>
     </div>
     <div class="showhide">
       <div class="serp">
-    <div class="header">
-        <a href="index.html"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo"></a>
-        <input type="text" name="" value="can eating dates help manange iron deficiency anemia">
-      </div>
-      <div class="searchTools">
-        <ul class="searchToolOptions">
-          <li class="active"><a href="">All</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">Shopping</a></li>
-          <li><a href="#">Maps</a></li>
-          <li><a href="#">More</a></li>
-        </ul>
-      </div>
-      <div class="searchResults">
-        <p class="numberOfResults">About 142,000,000 results (0.48 seconds)</p>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url11"></a>
-            <h2><a href="#" id="title11"></a></h2>
-            <p id="snippet11"></p>
+        <div class="header">
+          <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+            alt="Google Logo">
+          <input type="text" name="searchBar1" value="">
+        </div>
+        <div class="searchTools">
+          <ul class="searchToolOptions">
+            <li class="active"><a href="">All</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Shopping</a></li>
+            <li><a href="#">Maps</a></li>
+            <li><a href="#">More</a></li>
+          </ul>
+        </div>
+        <div class="searchResults">
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url01"></a>
+              <h2><a href="#" id="title01"></a></h2>
+              <p id="snippet01"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider01">
+              <p>Credible</p>
+            </div>
           </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider11">        
-            <p>Credible</p>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url02"></a>
+              <h2><a href="#" id="title02"></a></h2>
+              <p id="snippet02"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider02">
+              <p>Credible</p>
+            </div>
           </div>
-          <div class="visualisation">
-            <img src="" alt="Visualisation" id="img11">
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url03"></a>
+              <h2><a href="#" id="title03"></a></h2>
+              <p id="snippet03"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider03">
+              <p>Credible</p>
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url04"></a>
+              <h2><a href="#" id="title04"></a></h2>
+              <p id="snippet04"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider04">
+              <p>Credible</p>
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url05"></a>
+              <h2><a href="#" id="title05"></a></h2>
+              <p id="snippet05"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider05">
+              <p>Credible</p>
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url06"></a>
+              <h2><a href="#" id="title06"></a></h2>
+              <p id="snippet06"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider06">
+              <p>Credible</p>
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url07"></a>
+              <h2><a href="#" id="title07"></a></h2>
+              <p id="snippet07"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider07">
+              <p>Credible</p>
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url08"></a>
+              <h2><a href="#" id="title08"></a></h2>
+              <p id="snippet08"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider08">
+              <p>Credible</p>
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url09"></a>
+              <h2><a href="#" id="title09"></a></h2>
+              <p id="snippet09"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider09">
+              <p>Credible</p>
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url10"></a>
+              <h2><a href="#" id="title10"></a></h2>
+              <p id="snippet10"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider10">
+              <p>Credible</p>
+            </div>
           </div>
         </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url12"></a>
-            <h2><a href="#" id="title12"></a></h2>
-            <p id="snippet12"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider12">        
-            <p>Credible</p>
-          </div>
-          <div class="visualisation">
-            <img src="" alt="Visualisation" id="img12">
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url13"></a>
-            <h2><a href="#" id="title13"></a></h2>
-            <p id="snippet13"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider13">        
-            <p>Credible</p>
-          </div>
-          <div class="visualisation">
-            <img src="" alt="Visualisation" id="img13">
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url14"></a>
-            <h2><a href="#" id="title14"></a></h2>
-            <p id="snippet14"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider14">        
-            <p>Credible</p>
-          </div>
-          <div class="visualisation">
-            <img src="" alt="Visualisation" id="img14">
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url15"></a>
-            <h2><a href="#" id="title15"></a></h2>
-            <p id="snippet15"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider15">        
-            <p>Credible</p>
-          </div>
-          <div class="visualisation">
-            <img src="" alt="Visualisation" id="img15">
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url16"></a>
-            <h2><a href="#" id="title16"></a></h2>
-            <p id="snippet16"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider16">        
-            <p>Credible</p>
-          </div>
-          <div class="visualisation">
-            <img src="" alt="Visualisation" id="img16">
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url17"></a>
-            <h2><a href="#" id="title17"></a></h2>
-            <p id="snippet17"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider17">        
-            <p>Credible</p>
-          </div>
-          <div class="visualisation">
-            <img src="" alt="Visualisation" id="img17">
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url18"></a>
-            <h2><a href="#" id="title18"></a></h2>
-            <p id="snippet18"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider18">        
-            <p>Credible</p>
-          </div>
-          <div class="visualisation">
-            <img src="" alt="Visualisation" id="img18">
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url19"></a>
-            <h2><a href="#" id="title19"></a></h2>
-            <p id="snippet19"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider19">        
-            <p>Credible</p>
-          </div>
-          <div class="visualisation">
-            <img src="" alt="Visualisation" id="img19">
-          </div>
-        </div>
-        <div class="result">
-          <div class="snippet">
-            <a class="link" href="#" id="url20"></a>
-            <h2><a href="#" id="title20"></a></h2>
-            <p id="snippet20"></p>
-          </div>
-          <div class="rating">
-            <p>Not Credible</p>
-            <input type="range" min="0" max="100" value="0" class="slider" id="slider20">        
-            <p>Credible</p>
-          </div>
-          <div class="visualisation">
-            <img src="" alt="Visualisation" id="img20">
-          </div>
-        </div>
-      </div>
       </div>
     </div>
     <div class="showhide">
       <div class="feedback">
-    <h2>Wie hilfreich war die Visualisierung beim Bewerten der Suchergebnisse?</h2>
-    <div class="slider-container">
-      <p>Nicht hilfreich</p>
-      <input type="range" min="0" max="100" value="0" class="slider" id="helpful-slider-2">
-      <p>Sehr hilfreich</p>
+        <h2>Wie sicher waren Sie sich in Ihrem Urteil der Glaubwürdigkeit?</h2>
+        <div class="slider-container">
+          <p>Nicht sicher</p>
+          <input type="range" min="0" max="100" value="0" class="slider" id="confident-slider-1">
+          <p>Sehr sicher</p>
+        </div>
+        <h2>Wie schwer fiel es Ihnen ein Urteil zu fällen?</h2>
+        <div class="slider-container">
+          <p>Nicht schwer</p>
+          <input type="range" min="0" max="100" value="0" class="slider" id="hard-slider-1">
+          <p>Sehr schwer</p>
+        </div>
+        <p>
+          Auf welchen Kriterien basiert Ihr Urteil?
+        </p>
+        <textarea id="qual-feedback-1" name="qual-feedback" style="height:200px"></textarea>
+      </div>
     </div>
-    <h2>Wie sicher waren Sie sich in Ihrem Urteil der Glaubwürdigkeit?</h2>
-    <div class="slider-container">
-      <p>Nicht sicher</p>
-      <input type="range" min="0" max="100" value="0" class="slider" id="confident-slider-2">
-      <p>Sehr schwer</p>
+    <div class="showhide">
+      <div class="explanations">
+        <h1 id="vis-explanation-title"></h1>
+        <p id="vis-explanation"></p>
+        <ul>
+          <li>Correctness: Wie richtig sind die Informationen auf dieser Website?</li>
+          <li>Relevance: Wie relevant ist die Website in Bezug auf die Suchanfrage?</li>
+          <li>Readability: Wie verständlich ist die Website?</li>
+        </ul>
+        <p id="vis-explanation-complex"></p>
+      </div>
     </div>
-    <h2>Wie schwer fiel es Ihnen ein Urteil zu fällen?</h2>
-    <div class="slider-container">
-      <p>Nicht schwer</p>
-      <input type="range" min="0" max="100" value="0" class="slider" id="hard-slider-2">
-      <p>Sehr schwer</p>
+    <div class="showhide">
+      <div class="serp">
+        <div class="header">
+          <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+            alt="Google Logo">
+          <input type="text" name="searchBar2" value="">
+        </div>
+        <div class="searchTools">
+          <ul class="searchToolOptions">
+            <li class="active"><a href="">All</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Shopping</a></li>
+            <li><a href="#">Maps</a></li>
+            <li><a href="#">More</a></li>
+          </ul>
+        </div>
+        <div class="searchResults">
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url11"></a>
+              <h2><a href="#" id="title11"></a></h2>
+              <p id="snippet11"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider11">
+              <p>Credible</p>
+            </div>
+            <div class="visualisation">
+              <img src="" alt="Visualisation" id="img11">
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url12"></a>
+              <h2><a href="#" id="title12"></a></h2>
+              <p id="snippet12"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider12">
+              <p>Credible</p>
+            </div>
+            <div class="visualisation">
+              <img src="" alt="Visualisation" id="img12">
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url13"></a>
+              <h2><a href="#" id="title13"></a></h2>
+              <p id="snippet13"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider13">
+              <p>Credible</p>
+            </div>
+            <div class="visualisation">
+              <img src="" alt="Visualisation" id="img13">
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url14"></a>
+              <h2><a href="#" id="title14"></a></h2>
+              <p id="snippet14"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider14">
+              <p>Credible</p>
+            </div>
+            <div class="visualisation">
+              <img src="" alt="Visualisation" id="img14">
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url15"></a>
+              <h2><a href="#" id="title15"></a></h2>
+              <p id="snippet15"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider15">
+              <p>Credible</p>
+            </div>
+            <div class="visualisation">
+              <img src="" alt="Visualisation" id="img15">
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url16"></a>
+              <h2><a href="#" id="title16"></a></h2>
+              <p id="snippet16"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider16">
+              <p>Credible</p>
+            </div>
+            <div class="visualisation">
+              <img src="" alt="Visualisation" id="img16">
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url17"></a>
+              <h2><a href="#" id="title17"></a></h2>
+              <p id="snippet17"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider17">
+              <p>Credible</p>
+            </div>
+            <div class="visualisation">
+              <img src="" alt="Visualisation" id="img17">
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url18"></a>
+              <h2><a href="#" id="title18"></a></h2>
+              <p id="snippet18"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider18">
+              <p>Credible</p>
+            </div>
+            <div class="visualisation">
+              <img src="" alt="Visualisation" id="img18">
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url19"></a>
+              <h2><a href="#" id="title19"></a></h2>
+              <p id="snippet19"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider19">
+              <p>Credible</p>
+            </div>
+            <div class="visualisation">
+              <img src="" alt="Visualisation" id="img19">
+            </div>
+          </div>
+          <div class="result">
+            <div class="snippet">
+              <a class="link" href="#" id="url20"></a>
+              <h2><a href="#" id="title20"></a></h2>
+              <p id="snippet20"></p>
+            </div>
+            <div class="rating">
+              <p>Not Credible</p>
+              <input type="range" min="0" max="100" value="0" class="slider" id="slider20">
+              <p>Credible</p>
+            </div>
+            <div class="visualisation">
+              <img src="" alt="Visualisation" id="img20">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <h2>Offene Fragen</h2>
-    <ul>
-      <li>(Wie sehr) Hat die Visualisierung Ihr Urteil beeinflusst?
-      <li>Auf welchen Kriterien basiert Ihr Urteil?</li>
-      <li>Was hat Ihnen bei der Präsentation der Visualisierungen gefallen bzw. nicht gefallen?</li>
-    </li>
-    </ul>
-    <textarea id="qual-feedback-2" name="qual-feedback" style="height:200px"></textarea>
+    <div class="showhide">
+      <div class="feedback">
+        <h2>Wie hilfreich war die Visualisierung beim Bewerten der Suchergebnisse?</h2>
+        <div class="slider-container">
+          <p>Nicht hilfreich</p>
+          <input type="range" min="0" max="100" value="0" class="slider" id="helpful-slider-2">
+          <p>Sehr hilfreich</p>
+        </div>
+        <h2>Wie sicher waren Sie sich in Ihrem Urteil der Glaubwürdigkeit?</h2>
+        <div class="slider-container">
+          <p>Nicht sicher</p>
+          <input type="range" min="0" max="100" value="0" class="slider" id="confident-slider-2">
+          <p>Sehr schwer</p>
+        </div>
+        <h2>Wie schwer fiel es Ihnen ein Urteil zu fällen?</h2>
+        <div class="slider-container">
+          <p>Nicht schwer</p>
+          <input type="range" min="0" max="100" value="0" class="slider" id="hard-slider-2">
+          <p>Sehr schwer</p>
+        </div>
+        <h2>Offene Fragen</h2>
+        <ul>
+          <li>(Wie sehr) Hat die Visualisierung Ihr Urteil beeinflusst?
+          <li>Auf welchen Kriterien basiert Ihr Urteil?</li>
+          <li>Was hat Ihnen bei der Präsentation der Visualisierungen gefallen bzw. nicht gefallen?</li>
+          </li>
+        </ul>
+        <textarea id="qual-feedback-2" name="qual-feedback" style="height:200px"></textarea>
       </div>
     </div>
     <div class="showhide">
       <div class="demographics">
-      <form>
-        <label for="age">Alter</label><br>
-        <input type="text" id="age" name="age"><br>
-        <p>Geschlecht</p>
-        <input type="radio" id="männlich" name="gender" value="n">
-        <label for="männlich">männlich</label><br>
-        <input type="radio" id="weiblich" name="gender" value="w">
-        <label for="weiblich">weiblich</label><br>
-        <input type="radio" id="divers" name="gender" value="d">
-        <label for="divers">divers</label><br>
-        <input type="radio" id="ka" name="gender" value="na">
-        <label for="ka">keine Angabe</label><br>
-        <label for="occupation">Beruf (Studierende: bitte Studiengang mit angeben)</label><br>
-        <input type="text" id="occupation" name="occupation"><br>
-        <input type="checkbox" id="vpStunden" name="vpStunden" onclick="onCheckBoxClicked(event)">
-        <label for="vpStuden">Ich studiere Medieninformatik/Informationswissenschaft an der Universität Regensburg und möchte 0,5 Versuchspersonen-Stunden angerechnet bekommen</label><br>
-        <div class="email hidden">
+        <form>
+          <label for="age">Alter</label><br>
+          <input type="text" id="age" name="age"><br>
+          <p>Geschlecht</p>
+          <input type="radio" id="männlich" name="gender" value="m">
+          <label for="männlich">männlich</label><br>
+          <input type="radio" id="weiblich" name="gender" value="w">
+          <label for="weiblich">weiblich</label><br>
+          <input type="radio" id="divers" name="gender" value="d">
+          <label for="divers">divers</label><br>
+          <input type="radio" id="ka" name="gender" value="na">
+          <label for="ka">keine Angabe</label><br>
+          <label for="occupation">Beruf (Studierende: bitte Studiengang mit angeben)</label><br>
+          <input type="text" id="occupation" name="occupation"><br>
+          <input type="checkbox" id="vpStunden" name="vpStunden" onclick="onCheckBoxClicked(event)">
+          <label for="vpStuden">Ich studiere Medieninformatik/Informationswissenschaft an der Universität Regensburg und
+            möchte 0,5 Versuchspersonen-Stunden angerechnet bekommen</label><br>
+          <div class="email hidden">
             <label for="email">Bitte geben Sie hier Ihre Uni-Mailadresse an</label><br>
             <input type="text" placeholder="...@stud.uni-regensburg.de" id="email" name="email">
+          </div>
+        </form>
+        <div class="nextPage">
+          <a href="#">
+            <button class="button" id="button" onclick="saveData()">Umfrage abschließen</button>
+          </a>
         </div>
-      </form>
-      <div class="nextPage">
-        <a href="#">
-          <button class="button" id="button" onclick="saveData()">Umfrage abschließen</button>
-        </a>
-      </div>
       </div>
     </div>
-  </div>
-
-  <div class="navigation">
-      <a id="prev">Zurück</a>
-      <a id="next">Weiter</a>
   </div>
 
   <script>
 
     // navigation
-    $(document).ready(function(){
-        $(".divs .showhide").each(function(e) {
-            if (e != 0)
-                $(this).hide();
-        });
+    $(document).ready(function () {
+      $(".divs .showhide").each(function (e) {
+        if (e != 0)
+          $(this).hide();
+      });
 
-        $("#next").click(function(){
-            if ($(".divs .showhide:visible").next().length != 0)
-                $(".divs .showhide:visible").next().show().prev().hide();
-            else {
-                $(".divs .showhide:visible").hide();
-                $(".divs .showhide:first").show();
-            }
-            return false;
-        });
+      $("#next").click(function () {
+        if ($(".divs .showhide:visible").next().length != 0)
+          $(".divs .showhide:visible").next().show().prev().hide();
+        else {
+          //$(".divs .showhide:visible").hide();
+          //$(".divs .showhide:first").show();
+        }
+        return false;
+      });
 
-        $("#prev").click(function(){
-            if ($(".divs .showhide:visible").prev().length != 0)
-                $(".divs .showhide:visible").prev().show().next().hide();
-            else {
-                $(".divs .showhide:visible").hide();
-                $(".divs .showhide:last").show();
-            }
-            return false;
-        });
+      $("#prev").click(function () {
+        if ($(".divs .showhide:visible").prev().length != 0)
+          $(".divs .showhide:visible").prev().show().next().hide();
+        else {
+          //$(".divs .showhide:visible").hide();
+          //$(".divs .showhide:last").show();
+        }
+        return false;
+      });
     });
 
     // SERP 1
@@ -520,7 +543,18 @@
     var snippets_2 = [snippet_11, snippet_12, snippet_13, snippet_14, snippet_15, snippet_16, snippet_17, snippet_18, snippet_19, snippet_20];
     var urls_2 = [url_11, url_12, url_13, url_14, url_15, url_16, url_17, url_18, url_19, url_20];
     var imgs = [img_01, img_02, img_03, img_04, img_05, img_06, img_07, img_08, img_09, img_10];
- 
+
+
+    var topic1_ids = [];
+    var topic1_titles = [];
+    var topic1_snippets = [];
+    var topic1_urls = [];
+    var topic2_ids = [];
+    var topic2_titles = [];
+    var topic2_snippets = [];
+    var topic2_urls = [];
+    var topic2_scores = [];
+
     var topic105_ids = [];
     var topic105_titles = [];
     var topic105_snippets = [];
@@ -536,66 +570,83 @@
     var topic122_snippets = [];
     var topic122_urls = [];
     var topic122_scores = [];
+    var topic128_ids = [];
+    var topic128_titles = [];
+    var topic128_snippets = [];
+    var topic128_urls = [];
+    var topic128_scores = [];
     var topic129_ids = [];
     var topic129_titles = [];
     var topic129_snippets = [];
     var topic129_urls = [];
     var topic129_scores = [];
 
+    var topic1_output;
+    var topic2_output;
+    var topic1;
+    var topic2;
+
     $.ajax({
-        url: 'main.txt',
-        dataType: 'text',
+      url: 'main.txt',
+      dataType: 'text',
     }).done(successFunction);
 
     // boolean that determines group
     var group;
 
     function successFunction(text) {
-        var nLines = 1;
-        for(var i = 0, n = text.length; i < n; ++i) {
-            if(text[i] === '\n') {
-                ++nLines;
-            }
+      var nLines = 1;
+      for (var i = 0, n = text.length; i < n; ++i) {
+        if (text[i] === '\n') {
+          ++nLines;
         }
+      }
 
-        if (nLines % 2 == 0) {
-            group = true;
-        } else {
-            group = false;
-        }
-        $.ajax({
-            url: 'snippets.csv',
-            dataType: 'text',
-        }).done(readCSV);
+      if (nLines % 2 == 0) {
+        group = true;
+      } else {
+        group = false;
+      }
+      $.ajax({
+        url: 'snippets.csv',
+        dataType: 'text',
+      }).done(readCSV);
     }
 
     function readCSV(data) {
       var allRows = data.split(/\r?\n|\r/);
       for (var i = 1; i < allRows.length; i++) {
-        var rowCells = allRows[i].split('~');      
+        var rowCells = allRows[i].split('~');
         switch (rowCells[1]) {
-          case '105': 
+          case '105':
             topic105_ids.push(rowCells[2]);
             topic105_titles.push(rowCells[3]);
             topic105_snippets.push(rowCells[4]);
             topic105_urls.push(rowCells[5]);
             topic105_scores.push(rowCells[6]);
             break;
-          case '114': 
+          case '114':
             topic114_ids.push(rowCells[2]);
             topic114_titles.push(rowCells[3]);
             topic114_snippets.push(rowCells[4]);
             topic114_urls.push(rowCells[5]);
             topic114_scores.push(rowCells[6]);
             break;
-          case '122': 
+          case '122':
             topic122_ids.push(rowCells[2]);
             topic122_titles.push(rowCells[3]);
             topic122_snippets.push(rowCells[4]);
             topic122_urls.push(rowCells[5]);
             topic122_scores.push(rowCells[6]);
             break;
-          case '129': 
+          case '128':
+            topic128_ids.push(rowCells[2]);
+            topic128_titles.push(rowCells[3]);
+            topic128_snippets.push(rowCells[4]);
+            topic128_urls.push(rowCells[5]);
+            topic128_scores.push(rowCells[6]);
+            break;
+          case '129':
             topic129_ids.push(rowCells[2]);
             topic129_titles.push(rowCells[3]);
             topic129_snippets.push(rowCells[4]);
@@ -607,77 +658,165 @@
       loadSERPs();
     }
 
-    // TODO: load random topics for SERP 1 and SERP 2, a single topics MUST NOT appear in both no_vis & simple/complex_vis
+    // TODO: load random topics for SERP 1 and SERP 2, a single topic MUST NOT appear in both no_vis & simple/complex_vis
     // loads contents of SERPS based on group
     function loadSERPs() {
-        for (var i = 0; i < 10; i++) {
-            // SERP 1
-            titles_1[i].innerHTML = topic105_titles[i];
-            snippets_1[i].innerHTML = topic105_snippets[i];
-            urls_1[i].innerHTML = topic105_urls[i];
-            // SERP 2
-            titles_2[i].innerHTML = topic105_titles[i];
-            snippets_2[i].innerHTML = topic105_snippets[i];
-            urls_2[i].innerHTML = topic105_urls[i];
-            if (group) {
-                imgs[i].src = 'img/star-' + topic105_scores[i] + '.png';
-            } else {
-                imgs[i].src = 'img/' + topic105_ids[i] + '.png';
-            }
+      topic1 = randomInteger(1, 4);
+      topic2 = randomInteger(1, 4);
+      while (topic1 === topic2) {
+        topic2 = randomInteger(1, 4);
+      }
+      console.log(topic1)
+      console.log(topic2)
+      switch (topic1) {
+        case 1:
+          document.getElementsByName('searchBar1')[0].value = 'Should I apply ice to a burn?'
+          topic1_ids = topic105_ids;
+          topic1_titles = topic105_titles;
+          topic1_snippets = topic105_snippets;
+          topic1_urls = topic105_urls;
+          topic1_output = 105;
+          break;
+        case 2:
+          document.getElementsByName('searchBar1')[0].value = 'Can applying vitamin E cream remove skin scars?'
+          topic1_ids = topic114_ids;
+          topic1_titles = topic114_titles;
+          topic1_snippets = topic114_snippets;
+          topic1_urls = topic114_urls;
+          topic1_output = 114;
+          break;
+        case 3:
+          document.getElementsByName('searchBar1')[0].value = 'Does Aleve relieve migraine headaches?'
+          topic1_ids = topic122_ids;
+          topic1_titles = topic122_titles;
+          topic1_snippets = topic122_snippets;
+          topic1_urls = topic122_urls;
+          topic1_output = 122;
+          break;
+        case 4:
+          document.getElementsByName('searchBar1')[0].value = 'Can minoxidil treat hair loss?'
+          topic1_ids = topic129_ids;
+          topic1_titles = topic129_titles;
+          topic1_snippets = topic129_snippets;
+          topic1_urls = topic129_urls;
+          topic1_output = 129;
+          break;
+      }
+      switch (topic2) {
+        case 1:
+          document.getElementsByName('searchBar2')[0].value = 'Should I apply ice to a burn?'
+          topic2_ids = topic105_ids;
+          topic2_titles = topic105_titles;
+          topic2_snippets = topic105_snippets;
+          topic2_urls = topic105_urls;
+          topic2_scores = topic105_scores;
+          topic2_output = 105;
+          break;
+        case 2:
+          document.getElementsByName('searchBar2')[0].value = 'Can applying vitamin E cream remove skin scars?'
+          topic2_ids = topic114_ids;
+          topic2_titles = topic114_titles;
+          topic2_snippets = topic114_snippets;
+          topic2_urls = topic114_urls;
+          topic2_scores = topic114_scores;
+          topic2_output = 114;
+          break;
+        case 3:
+          document.getElementsByName('searchBar2')[0].value = 'Does Aleve relieve migraine headaches?'
+          topic2_ids = topic122_ids;
+          topic2_titles = topic122_titles;
+          topic2_snippets = topic122_snippets;
+          topic2_urls = topic122_urls;
+          topic2_scores = topic122_scores;
+          topic2_output = 122;
+          break;
+        case 4:
+          document.getElementsByName('searchBar2')[0].value = 'Can minoxidil treat hair loss?'
+          topic2_ids = topic129_ids;
+          topic2_titles = topic129_titles;
+          topic2_snippets = topic129_snippets;
+          topic2_urls = topic129_urls;
+          topic2_scores = topic129_scores;
+          topic2_output = 129;
+          break;
+      }
+      for (var i = 0; i < 10; i++) {
+        // SERP 1
+        titles_1[i].innerHTML = topic1_titles[i];
+        snippets_1[i].innerHTML = topic1_snippets[i];
+        urls_1[i].innerHTML = topic1_urls[i];
+        // SERP 2
+        titles_2[i].innerHTML = topic2_titles[i];
+        snippets_2[i].innerHTML = topic2_snippets[i];
+        urls_2[i].innerHTML = topic2_urls[i];
+        if (group) {
+          imgs[i].src = 'img/star-' + topic2_scores[i] + '.png';
+          document.getElementById('vis-explanation-title').innerHTML = "SIMPLE VISUALISIERUNG - 5-STAR-RATING"
+          document.getElementById('vis-explanation').innerHTML = "Bei dieser Suchergebnisseite sind neben den einzelnen Ergebnissen Skalen des 5-Sterne-Ranking dargestellt. Grundlage für die Bewertung ist ein “Overall Score”, der sich aus folgenden drei Werten zusammensetzt:";
+        } else {
+          imgs[i].src = 'img/' + topic2_ids[i] + '.png';
+          document.getElementById('vis-explanation-title').innerHTML = "KOMPLEXE VISUALISIERUNG - SPIDER CHART"
+          document.getElementById('vis-explanation').innerHTML = " Bei dieser Suchergebnisseite sind neben den einzelnen Ergebnissen Skalen in einem Spider Chart dargestellt. Diese Visualisierung zeigt drei verschiedene Bewertungen der jeweiligen Website an:";
+          document.getElementById('vis-explanation-complex').innerHTML = "Zusätzlich ist ein “Overall Score” dargestellt (gestrichelte rote Linie), der sich aus den gerade genannten Werten zusammensetzt."
         }
+      }
+    }
+
+    function randomInteger(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
     // saves submitted data
     function saveData() {
-        var id = 12;
-        // SERP 1
-        var sliders_1 = [];
-        sliders_1.push(document.getElementById("slider01").value);
-        sliders_1.push(document.getElementById("slider02").value);
-        sliders_1.push(document.getElementById("slider03").value);
-        sliders_1.push(document.getElementById("slider04").value);
-        sliders_1.push(document.getElementById("slider05").value);
-        sliders_1.push(document.getElementById("slider06").value);
-        sliders_1.push(document.getElementById("slider07").value);
-        sliders_1.push(document.getElementById("slider08").value);
-        sliders_1.push(document.getElementById("slider09").value);
-        sliders_1.push(document.getElementById("slider10").value);
-        // FEEDBACK 1
-        var feedback_1 = [];
-        feedback_1.push(document.getElementById("confident-slider-1").value);
-        feedback_1.push(document.getElementById("hard-slider-1").value);
-        var freetext_1 = document.getElementById("qual-feedback-1").value;
-        // SERP 2
-        var sliders_2 = [];
-        sliders_2.push(document.getElementById("slider11").value);
-        sliders_2.push(document.getElementById("slider12").value);
-        sliders_2.push(document.getElementById("slider13").value);
-        sliders_2.push(document.getElementById("slider14").value);
-        sliders_2.push(document.getElementById("slider15").value);
-        sliders_2.push(document.getElementById("slider16").value);
-        sliders_2.push(document.getElementById("slider17").value);
-        sliders_2.push(document.getElementById("slider18").value);
-        sliders_2.push(document.getElementById("slider19").value);
-        sliders_2.push(document.getElementById("slider20").value);
-        // FEEDBACK 2
-        var feedback_2 = [];
-        feedback_2.push(document.getElementById("helpful-slider-2").value);
-        feedback_2.push(document.getElementById("confident-slider-2").value);
-        feedback_2.push(document.getElementById("hard-slider-2").value);
-        var freetext_2 = document.getElementById("qual-feedback-2").value;
-        // DEMOGRAPHIC DATA
-        var age = document.getElementById('age').value;
-        var gender = document.querySelector('input[name="gender"]:checked').value;
-        var occupation = document.getElementById('occupation').value;
-        var email = document.getElementById('email').value;
-        // save to server file
-        var xmlhttp=new XMLHttpRequest();
-        xmlhttp.open("GET","main.php?id="+id+"&age="+age+"&gender="+gender+"&occupation="+occupation
-                           +"&sliders_1="+sliders_1+"&feedback_1="+feedback_1+"&freetext_1="+freetext_1
-                           +"&sliders_2="+sliders_2+"&feedback_2="+feedback_2+"&freetext_2="+freetext_2,
-                           true);
-        xmlhttp.send();
+      // SERP 1
+      var sliders_1 = [];
+      sliders_1.push(document.getElementById("slider01").value);
+      sliders_1.push(document.getElementById("slider02").value);
+      sliders_1.push(document.getElementById("slider03").value);
+      sliders_1.push(document.getElementById("slider04").value);
+      sliders_1.push(document.getElementById("slider05").value);
+      sliders_1.push(document.getElementById("slider06").value);
+      sliders_1.push(document.getElementById("slider07").value);
+      sliders_1.push(document.getElementById("slider08").value);
+      sliders_1.push(document.getElementById("slider09").value);
+      sliders_1.push(document.getElementById("slider10").value);
+      // FEEDBACK 1
+      var feedback_1 = [];
+      feedback_1.push(document.getElementById("confident-slider-1").value);
+      feedback_1.push(document.getElementById("hard-slider-1").value);
+      var freetext_1 = document.getElementById("qual-feedback-1").value;
+      // SERP 2
+      var sliders_2 = [];
+      sliders_2.push(document.getElementById("slider11").value);
+      sliders_2.push(document.getElementById("slider12").value);
+      sliders_2.push(document.getElementById("slider13").value);
+      sliders_2.push(document.getElementById("slider14").value);
+      sliders_2.push(document.getElementById("slider15").value);
+      sliders_2.push(document.getElementById("slider16").value);
+      sliders_2.push(document.getElementById("slider17").value);
+      sliders_2.push(document.getElementById("slider18").value);
+      sliders_2.push(document.getElementById("slider19").value);
+      sliders_2.push(document.getElementById("slider20").value);
+      // FEEDBACK 2
+      var feedback_2 = [];
+      feedback_2.push(document.getElementById("helpful-slider-2").value);
+      feedback_2.push(document.getElementById("confident-slider-2").value);
+      feedback_2.push(document.getElementById("hard-slider-2").value);
+      var freetext_2 = document.getElementById("qual-feedback-2").value;
+      // DEMOGRAPHIC DATA
+      var age = document.getElementById('age').value;
+      var gender = document.querySelector('input[name="gender"]:checked').value;
+      var occupation = document.getElementById('occupation').value;
+      var email = document.getElementById('email').value;
+      // save to server file
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.open("GET", "main.php?age=" + age + "&gender=" + gender + "&occupation=" + occupation
+        + "&topic_1=" + topic1_output + "&sliders_1=" + sliders_1 + "&feedback_1=" + feedback_1 + "&freetext_1=" + freetext_1
+        + "&topic_2=" + topic2_output + "&sliders_2=" + sliders_2 + "&feedback_2=" + feedback_2 + "&freetext_2=" + freetext_2,
+        true);
+      xmlhttp.send();
     }
   </script>
 </body>
+
 </html>
