@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <div class="empty"></div>
   <div class="navigation">
     <button class="btn" id="prev">Zurück</button>
     <button class="btn" id="next">Weiter</button>
@@ -180,9 +181,11 @@
           <input type="range" min="0" max="100" value="0" class="slider" id="hard-slider-1">
           <p>Sehr schwer</p>
         </div>
+        <br>
         <p>
           Auf welchen Kriterien basiert Ihr Urteil?
         </p>
+        <br>
         <textarea id="qual-feedback-1" name="qual-feedback" style="height:200px"></textarea>
       </div>
     </div>
@@ -403,7 +406,7 @@
       <div class="demographics">
         <form>
           <label for="age">Alter</label><br>
-          <input type="text" id="age" name="age"><br>
+          <input type="text" id="age" name="age"><br><br>
           <p>Geschlecht</p>
           <input type="radio" id="männlich" name="gender" value="m">
           <label for="männlich">männlich</label><br>
@@ -412,20 +415,19 @@
           <input type="radio" id="divers" name="gender" value="d">
           <label for="divers">divers</label><br>
           <input type="radio" id="ka" name="gender" value="na">
-          <label for="ka">keine Angabe</label><br>
+          <label for="ka">keine Angabe</label><br><br>
           <label for="occupation">Beruf (Studierende: bitte Studiengang mit angeben)</label><br>
-          <input type="text" id="occupation" name="occupation"><br>
-          <input type="checkbox" id="vpStunden" name="vpStunden" onclick="onCheckBoxClicked(event)">
-          <label for="vpStuden">Ich studiere Medieninformatik/Informationswissenschaft an der Universität Regensburg und
-            möchte 0,5 Versuchspersonen-Stunden angerechnet bekommen</label><br>
+          <input type="text" id="occupation" name="occupation"><br><br>
+          <input type="checkbox" id="vpStunden" name="vpStunden" onclick="onCheckBoxClicked(event)" autocomplete="off">
+          <label for="vpStuden">Ich studiere Medieninformatik/Informationswissenschaft an der Universität Regensburg und möchte 0,5 Versuchspersonen-Stunden angerechnet bekommen</label><br><br>
           <div class="email hidden">
             <label for="email">Bitte geben Sie hier Ihre Uni-Mailadresse an</label><br>
             <input type="text" placeholder="...@stud.uni-regensburg.de" id="email" name="email">
           </div>
         </form>
         <div class="nextPage">
-          <a href="#">
-            <button class="button" id="button" onclick="saveData()">Umfrage abschließen</button>
+          <a href="endscreen.html">
+            <button class="btn" onclick="saveData()">Umfrage abschließen</button>
           </a>
         </div>
       </div>
@@ -461,6 +463,11 @@
         return false;
       });
     });
+
+
+    function onCheckBoxClicked(event) {
+            document.querySelector(".email").classList.toggle("hidden");
+        };
 
     // SERP 1
     var title_01 = document.getElementById("title01");
@@ -658,7 +665,6 @@
       loadSERPs();
     }
 
-    // TODO: load random topics for SERP 1 and SERP 2, a single topic MUST NOT appear in both no_vis & simple/complex_vis
     // loads contents of SERPS based on group
     function loadSERPs() {
       topic1 = randomInteger(1, 4);
