@@ -22,7 +22,8 @@
       <div class="explanations">
         <h1>NUR RANKING - KEINE VISUALISIERUNG</h1>
         <p>
-          Im Folgenden werden Sie eine Suchergebnisseite sehen, bei der die einzelnen Ergebnisse nur anhand der Relevanz sortiert sind.
+          Im Folgenden werden Sie eine Suchergebnisseite sehen, bei der die einzelnen Ergebnisse nur anhand der Relevanz
+          sortiert sind.
         </p>
       </div>
     </div>
@@ -384,7 +385,7 @@
         <div class="slider-container">
           <p>Nicht sicher</p>
           <input type="range" min="0" max="100" value="0" class="slider" id="confident-slider-2">
-          <p>Sehr schwer</p>
+          <p>Sehr sicher</p>
         </div>
         <h2>Wie schwer fiel es Ihnen ein Urteil zu fällen?</h2>
         <div class="slider-container">
@@ -419,7 +420,8 @@
           <label for="occupation">Beruf (Studierende: bitte Studiengang mit angeben)</label><br>
           <input type="text" id="occupation" name="occupation"><br><br>
           <input type="checkbox" id="vpStunden" name="vpStunden" onclick="onCheckBoxClicked(event)" autocomplete="off">
-          <label for="vpStuden">Ich studiere Medieninformatik/Informationswissenschaft an der Universität Regensburg und möchte 0,5 Versuchspersonen-Stunden angerechnet bekommen</label><br><br>
+          <label for="vpStuden">Ich studiere Medieninformatik/Informationswissenschaft an der Universität Regensburg und
+            möchte 0,5 Versuchspersonen-Stunden angerechnet bekommen</label><br><br>
           <div class="email hidden">
             <label for="email">Bitte geben Sie hier Ihre Uni-Mailadresse an</label><br>
             <input type="text" placeholder="...@stud.uni-regensburg.de" id="email" name="email">
@@ -466,8 +468,8 @@
 
 
     function onCheckBoxClicked(event) {
-            document.querySelector(".email").classList.toggle("hidden");
-        };
+      document.querySelector(".email").classList.toggle("hidden");
+    };
 
     // SERP 1
     var title_01 = document.getElementById("title01");
@@ -600,6 +602,7 @@
 
     // boolean that determines group
     var group;
+    var group_output;
 
     function successFunction(text) {
       var nLines = 1;
@@ -611,8 +614,10 @@
 
       if (nLines % 2 == 0) {
         group = true;
+        group_output = "simple";
       } else {
         group = false;
+        group_output = "complex";
       }
       $.ajax({
         url: 'snippets.csv',
@@ -816,11 +821,14 @@
       var email = document.getElementById('email').value;
       // save to server file
       var xmlhttp = new XMLHttpRequest();
-      xmlhttp.open("GET", "main.php?age=" + age + "&gender=" + gender + "&occupation=" + occupation
+      var xmlhttpEmail = new XMLHttpRequest();
+      xmlhttp.open("GET", "main.php?age=" + age + "&gender=" + gender + "&occupation=" + occupation + "&group=" + group_output
         + "&topic_1=" + topic1_output + "&sliders_1=" + sliders_1 + "&feedback_1=" + feedback_1 + "&freetext_1=" + freetext_1
         + "&topic_2=" + topic2_output + "&sliders_2=" + sliders_2 + "&feedback_2=" + feedback_2 + "&freetext_2=" + freetext_2,
         true);
+      xmlhttpEmail.open("GET", "emails.php?email=" + email, true);
       xmlhttp.send();
+      xmlhttpEmail.send();
     }
   </script>
 </body>

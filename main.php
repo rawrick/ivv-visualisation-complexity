@@ -2,7 +2,7 @@
 $age = $_REQUEST['age'];
 $gender = $_REQUEST['gender'];
 $occupation = $_REQUEST['occupation'];
-$email = $_REQUEST['email'];
+$group = $_REQUEST['group'];
 $topic_1 = $_REQUEST['topic_1'];
 $sliders_1 = $_REQUEST['sliders_1'];
 $feedback_1 = $_REQUEST['feedback_1'];
@@ -18,6 +18,7 @@ fputs($fp,"\n");
 fputs($fp,$age . ";");
 fputs($fp,$gender . ";");
 fputs($fp,$occupation . ";");
+fputs($fp,$group . ";");
 fputs($fp,$topic_1 . ";");
 fputs($fp,$sliders_1 . ";");
 fputs($fp,$feedback_1 . ";");
@@ -27,9 +28,4 @@ fputs($fp,$sliders_2 . ";");
 fputs($fp,$feedback_2 . ";");
 fputs($fp,$freetext_2);
 fclose($fp);
-$filemail = "emails.txt";
-$content = file($filemain);
-$fe = fopen($filemail,"a");
-fputs($fe,"\n");
-fputs($fe,$email);
 ?>

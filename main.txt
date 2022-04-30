@@ -1,1 +1,1 @@
-age;gender;occupation;topic_1;sliders_1;feedback_1;freetext_1;topic_2;sliders_2;feedback_2;freetext_2
+age;gender;occupation;group;topic_1;sliders_1;feedback_1;freetext_1;topic_2;sliders_2;feedback_2;freetext_2
